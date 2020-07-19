@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-4</title>
+    <script type="text/javascript">
+        var choice = prompt("Enter the operator(+,-,*,/,%,√) which u want to perform: ");
+    switch (choice) {
+      case '+':
+        add();
+        break;
+      case '-':
+        sub();
+        break;
+      case '*':
+        mul();
+        break;
+      case '/':
+        div();
+        break;
+      case '%':
+        percentage();
+        break;
+      case '√':
+        squareroot();
+        break;
+
+    } 
+    function add() {
+      var no1 = parseInt(prompt("Enter number 1"));
+      var no2 = parseInt(prompt("Enter number 2"));
+      var result = (no1) + (no2);
+      document.write("Addition of two numbers :"+result)
+    }
+    function sub(){
+      var no1 = prompt("Enter number 1");
+      var no2 = prompt("Enter number 2");
+      var result = Math.abs(no1 - no2);
+      document.write("Difference of two numbers :"+result)
+    }
+    function mul() {
+      var no1 = prompt("Enter number 1");
+      var no2 = prompt("Enter number 2");
+      var result = (no1 * no2);
+      document.write("Product of two numbers :"+result)
+    }
+    function div() {
+      var no1 = prompt("Enter number 1");
+      var no2 = prompt("Enter number 2");
+      var result = (no1 / no2);
+      document.write("Division of two numbers :"+result)
+    }
+    function percentage() {
+      var no1 = prompt("Enter number");
+      var no2 = prompt("Enter the percent");
+      result = (no1 * (no2 / 100));
+      document.write(no2+"% of "+no1+ " is:"+result);
+    }
+    function squareroot() {
+      var no1 = prompt("Enter the number");
+      result = Math.sqrt(no1);
+      document.write("Squre root of "+no1+" is::"+result);
+    }
+
+    </script>
+</head>
+<body>
+</body>
+</html>

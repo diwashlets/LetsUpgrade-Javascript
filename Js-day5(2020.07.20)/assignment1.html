@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1</title>
+    <script type="text/javascript">  
+        var num = prompt("Enter positive number: ")
+
+        var num_arr = []
+        for (var i=1; i <= num; i++)
+            num_arr.push(i)
+        
+        var num_odds = num_arr.filter( n => n%2)
+        
+        var odd_cubes = num_odds.map(n => n**3)
+        
+        console.log("Cubes of odd numbers in the range is: " + odd_cubes);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

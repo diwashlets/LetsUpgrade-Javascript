@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+    
+</head>
+<body>
+    <h3 id="title"></h3>
+
+    <button id="dark" value="ON" onclick="toggle(this);">Dark Mode</button>
+
+    <h2 id="time"></h2>
+    <script type="text/javascript">
+        const name = prompt("Enter your name:");
+
+        title.innerText += `Welcome to our page "${name}"`;
+
+        const ctime = document.getElementById('time');
+
+        function clock(){
+            let date = new Date();
+            let time = date.toLocaleTimeString();
+            ctime.innerText = "Time is  "+time;
+        }
+
+        setInterval(clock,1000);
+
+        function toggle(button){
+            
+            if(document.getElementById("dark").value=="ON"){
+                document.getElementById("dark").value="OFF";
+                document.body.style.backgroundColor = 'black';
+                document.body.style.color = 'white';
+                button.innerText = 'Light Mode'
+            }
+            
+            else if(document.getElementById("dark").value=="OFF"){
+                document.getElementById("dark").value="ON";
+                document.body.style.backgroundColor = 'white';
+                document.body.style.color = 'black';
+                button.innerText = 'Dark Mode'
+            }
+        
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1</title>
+    
+</head>
+<body>
+    <script type="text/javascript">
+        bgc=['aqua','blue','blueviolet','cyan','darkgreen','wheat','red','black'];
+
+        let i=0;
+        function bgchange(){
+            document.body.style.backgroundColor = bgc[i];
+            document.body.style.color = 'white';
+            i+=1;
+            if (i ==(bgc.length)){
+            i=0;
+            }
+            else{
+            i=i;
+            }
+        }
+        setInterval(bgchange,1000);
+    </script>
+</body>
+</html>
